@@ -10,6 +10,9 @@ import { useNavigate } from 'react-router-dom';
 import { login } from '@shared/api/users';
 import type { AuthData } from '@entities/model/users';
 
+/**
+ * Производит вход в административную панель
+ */
 export default function Login() {
   const navigate = useNavigate();
   const [emailError, setEmailError] = React.useState(false);

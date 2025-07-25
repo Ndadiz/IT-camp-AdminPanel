@@ -5,7 +5,9 @@ import { createUser, updateUser } from "@shared/api/users";
 import ServerStatus from "@shared/ui/ServerStatus";
 import EditUserForm from "@features/edit-user/EditUserForm";
 import { useGetOne } from "./api/getOne";
-
+/**
+ * Отправляет данные пользователя на сервер
+ */
 export function UserEditor() {
   const navigate = useNavigate();
   const { id } = useParams<{ id?: string }>();

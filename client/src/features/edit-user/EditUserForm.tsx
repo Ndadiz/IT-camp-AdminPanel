@@ -20,7 +20,13 @@ type Props = {
   onSave: (data: User) => void;
   flag: 'edit' | 'create';
 };
-
+/**
+ * Выводит форму проводит валидацию, отправляет в UserEditor данные
+ * @param user Данные пользователя для редактирования
+ * @param OnSave Функция для сохранения данных в компоненте UserEditor
+ * @param flag Помогает отличать создание пользователя и редактирование
+ * 
+ */
 export default function EditUserForm({ user, onSave, flag }: Props) {
 
   const validationSchema = yup.object({
